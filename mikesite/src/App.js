@@ -8,6 +8,7 @@ import './components/css/main.css';
 
 import Home from './components/Pages/home'
 import SignIn from './components/Pages/sign-in'
+import SignUp from "./components/Pages/sign-up"
 
 class App extends React.Component {
 
@@ -31,6 +32,7 @@ class App extends React.Component {
               </div>
               <nav>
                 <Link to="/Sign-In">Sign In</Link>
+               
                 <Link to="/Home">Home</Link>
                 <h1>
                   <a>Welcome to the Storefront</a>
@@ -39,8 +41,11 @@ class App extends React.Component {
               </nav>
               
               <Switch>
-                <Route path="/Sign-In">
+                <Route path="/sign-In">
                   <SignIn/>
+                </Route>
+                <Route path="/sign-up">
+                  <SignUp />
                 </Route>
                 <Route path="/Home">
                   <Home /> 
