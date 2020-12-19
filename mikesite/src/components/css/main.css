@@ -1,0 +1,65 @@
+nav {
+       display:flex;
+    justify-content:space-around;
+}
+nav > input{
+    
+    align-items: top;
+   background-color:brown;
+   color:pink;
+}
+.placeholder{
+    color:red;
+}
+.nav-bar{
+     width:90rem;
+}
+
+nav{  
+  padding:5rem;
+  display:flex;
+    justify-content:space-around;
+   color:blue; 
+}
+
+.landing-page{
+    display:flex;
+    flex-direction: row-reverse;
+}
+.big-boy-box{
+width:25rem;
+height:50rem;
+background-color: white;
+}
+.recent-uploads{
+    padding-top:2rem;
+    color:green;
+}
+
+.home-img{
+padding:1rem;
+width:auto;
+height:6rem;
+}
+.store-feed{
+    padding: 6rem;
+}
+
+ul > a{
+    padding:1rem;
+    justify-content: center;
+}
+.home-footer{
+    padding-top:4rem;
+}
+.list-cat > li{
+    display:flex;
+    flex-direction: column;
+}
+.list-cat{
+    width:85rem;
+    display:flex;
+ flex-direction:row;   
+ justify-content: space-around;
+
+}
