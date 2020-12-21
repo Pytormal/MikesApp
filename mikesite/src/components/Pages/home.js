@@ -12,7 +12,7 @@ const Home = (props) => {
                
                 <div className='store-feed feat-contain'>
                     <div>Featured</div>
-                    <h4>Images Here</h4>
+                    <h4>Items</h4>
                         <section className="image-feat">
                             <img className="home-img" src={'https://images.pexels.com/photos/573299/pexels-photo-573299.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'} alt="camera" />
                             <img className="home-img" src={'https://images.pexels.com/photos/96381/pexels-photo-96381.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'} />
@@ -22,9 +22,10 @@ const Home = (props) => {
                 </div>
                 
                     <div className="store-feed tren-contain">
-                    <div>Trending</div>
+                        <div>Trending</div>
+                        <h4>Items</h4>
                     <section className="image-tren">
-                            <h4>Images Here</h4>
+                            
                             <img className="home-img" src={'https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=100'} alt="camera" />
                             <img className="home-img" src={'https://images.pexels.com/photos/3735152/pexels-photo-3735152.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=100'} />
                             <img className="home-img" src={'https://images.pexels.com/photos/5273033/pexels-photo-5273033.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=100'} />

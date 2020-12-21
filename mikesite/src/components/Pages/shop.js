@@ -8,7 +8,7 @@ function Shop(props) {
     return (
         <div className="items-list-wrapper">
             {props.items.map((item) => (
-                <div key={item.id}>
+                <div className='store-items' key={item.id}>
                     <Link to={`/shop/${item.id}`}>
                         <img src={item.imageUrl} alt={item.name} />
                         <p>{item.name}</p>
