@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import { Link, Route, Switch } from "react-router-dom"
 
+
 import './components/css/reset.css'
 import './App.css';
 import './components/css/main.css';
 
 
-import Home from './components/Pages/home'
-import SignIn from './components/Pages/sign-in'
-import SignUp from "./components/Pages/sign-up"
 
-import Shop from "./components/Pages/shop"
+
+import Home from './components/header.js/home'
+import SignIn from './components/header.js/sign-in'
+import SignUp from "./components/header.js/sign-up"
+
+import Shop from "./components/header.js/shop"
 import Item from "./components/dummy-data/dummy-item"
 import data from "./components/dummy-data/dummy-store"
 
@@ -38,15 +41,7 @@ export default function App() {
               <div>
                
               </div>
-              <nav>
-                <Link to="/Sign-In">Sign In</Link>
-                <Link to="/Home">Home</Link>
-                <Link to="/Shop">Shop</Link>
-                <h1>
-                  <a>Welcome to the Storefront</a>
-                </h1>
-                  <input className="Search" placeholder="Search here"></input>
-              </nav>
+             
               
               <Switch>
                 <Route path="/sign-In">
@@ -61,7 +56,7 @@ export default function App() {
                 <Route path="/shop">
                     <Shop items={product}/>
                 </Route>
-                <Route path="/Home">
+                <Route path="/">
                   <Home /> 
                 </Route>
               </Switch>
