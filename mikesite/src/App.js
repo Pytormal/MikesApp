@@ -5,22 +5,22 @@ import { Link, Route, Switch } from "react-router-dom"
 import './components/css/reset.css'
 import './App.css';
 import './components/css/main.css';
+import './components/css/login.css';
+import './components/css/header.css'
 
 
+import Home from './components/Pages/home'
+import SignIn from './components/Pages/sign-in'
+import SignUp from "./components/Pages/sign-up"
 
-
-import Home from './components/header.js/home'
-import SignIn from './components/header.js/sign-in'
-import SignUp from "./components/header.js/sign-up"
-
-import Shop from "./components/header.js/shop"
+import Shop from "./components/Pages/shop"
 import Item from "./components/dummy-data/dummy-item"
 import data from "./components/dummy-data/dummy-store"
 
 export default function App() {
   const [product] = useState(data);
 
-// class App extends React.Component {
+  // class App extends React.Component {
 
   // constructor() {
   //   super()
@@ -30,52 +30,60 @@ export default function App() {
   // }
 
   // render(props) {
-  
-    return (
-      <>
-        <div className="App">
 
-          <header className="App-header">
-            <section className="nav-bar">
-             
-              <div>
-               
-              </div>
-             
-              
-              <Switch>
-                <Route path="/sign-In">
-                  <SignIn/>
-                </Route>
-                <Route path="/sign-up">
-                  <SignUp />
-                </Route>
-                <Route path="/shop/:itemId">
-                  <Item items={product} />
-                  </Route>
-                <Route path="/shop">
-                    <Shop items={product}/>
-                </Route>
-                <Route path="/">
-                  <Home /> 
-                </Route>
-              </Switch>
+  return (
+    <>
+      <div className="App">
 
-            </section>
+        <section className="nav-bar">
+          <ul>
+            <section className="title-nav">
 
-               
             
-          </header>
-          <footer>
-            Copyright
+            <nav>
+              <Link to="/Sign-In">Sign In</Link>
+              <Link to="/">Home</Link>
+                <Link to="/Shop">Shop</Link>
+             <input placeholder="Search Here"></input>
+            </nav>   
+</section>
+          </ul>
+        </section>
+
+
+    <section className="body">
+            <Switch>
+              <Route path="/sign-In">
+                <SignIn />
+              </Route>
+              <Route path="/sign-up">
+                <SignUp />
+              </Route>
+              <Route path="/shop/:itemId">
+                <Item items={product} />
+              </Route>
+              <Route path="/shop">
+                <Shop items={product} />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+
+          </section>
+
+
+
+        <footer>
+          Copyright
              <a>sitemap</a>
-            <a>contact</a>
-          </footer>
-         
-        </div>
-      </>
-    )
-  }
+          <a>contact</a>
+        </footer>
+
+      </div>
+    </>
+  )
+}
 // }
 
 

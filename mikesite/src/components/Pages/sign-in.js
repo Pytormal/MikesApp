@@ -6,8 +6,9 @@ import LoginForm from '../forms/LoginForm';
 const SignIn = (props) => {
     return (
         <>
+         
             <section className="login">
-                <h1>
+                <h1 className='L-header'>
                     Login here
         </h1>
                 <div>

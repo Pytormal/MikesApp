@@ -1,0 +1,16 @@
+.login > h1{
+  color:aqua;
+  font-size:3rem;
+  padding: .5rem;
+  padding-bottom: 3rem;
+}
+
+.inputText{
+    padding:1rem;
+    color:blue;
+}
+
+.username{
+    font-size:40px;
+    padding:1rem;
+}

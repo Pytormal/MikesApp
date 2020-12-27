@@ -11,7 +11,7 @@ import axios from "axios";
 const formSchema = yup.object().shape({
     name: yup.string().min(4, '4 characters minimum for name').required("Name required"),
     lastName: yup.string().required("Last Name required"),
-    email: yup.string('@').email('Valid Email needed').required('must include email'),
+    email: yup.string('@').email('Valid Email needed "@" ').required('must include email'),
     password: yup.string().min(5, 'password needs to be more than 5 characters long'),
     username: yup.string().min(5, "5 characters minimum for your user name").required("user name required"),
     terms: yup.boolean().oneOf([true], "please validate you are human")
